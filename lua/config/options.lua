@@ -13,6 +13,9 @@ vim.g.mapleader = ","
 opt.termguicolors = true
 opt.number = true
 
+-- turn off lazyvim's relative line numbers
+opt.relativenumber = false
+
 ----------------
 -- Whitespace --
 ----------------
