@@ -11,17 +11,18 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        tailwindcss = {
+          filetypes_include = {
+            "typescript.glimmer",
+            "javascript.glimmer",
+          },
+        },
         eslint = {
           filetypes = {
             "javascript",
-            "javascriptreact",
-            "javascript.jsx",
             "typescript",
-            "typescriptreact",
-            "typescript.tsx",
             "vue",
             "svelte",
-            "astro",
             "typescript.glimmer",
             "javascript.glimmer",
           },
