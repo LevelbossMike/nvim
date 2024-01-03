@@ -38,5 +38,5 @@ return {
   -- UI section --
   ----------------
   -- don't show a tab like bufferbar
-  { "akinsho/bufferline.nvim", enabled = false },
+  -- { "akinsho/bufferline.nvim", enabled = false },
 }
