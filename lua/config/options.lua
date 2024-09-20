@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 local opt = vim.opt
+local g = vim.g
 
 ------------
 -- Leader --
@@ -59,5 +60,3 @@ vim.cmd([[
 opt.swapfile = false
 -- yanking should save to the system clipboard
 opt.clipboard = "unnamedplus"
--- make sure to render markdown tasks as checkboxes
-opt.conceallevel = 2
