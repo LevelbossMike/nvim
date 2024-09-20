@@ -14,5 +14,8 @@ return {
         path = os.getenv("OBSIDIAN_VAULT"),
       },
     },
+    ui = {
+      enable = false,
+    },
   },
 }
