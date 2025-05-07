@@ -60,3 +60,9 @@ vim.cmd([[
 opt.swapfile = false
 -- yanking should save to the system clipboard
 opt.clipboard = "unnamedplus"
+
+-------------
+-- lazyvim --
+-------------
+-- don't animate
+vim.g.snacks_animate = false
