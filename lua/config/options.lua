@@ -61,6 +61,17 @@ opt.swapfile = false
 -- yanking should save to the system clipboard
 opt.clipboard = "unnamedplus"
 
+-- Set autoread to automatically reload files when changed externally
+-- useful for when agents change code
+vim.opt.autoread = true
+
+-- Proactively check for file changes when the window gains focus or a buffer
+-- is entered
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
+  pattern = "*",
+  command = "checktime",
+})
+
 -------------
 -- lazyvim --
 -------------
