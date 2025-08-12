@@ -30,5 +30,8 @@ yabai -m rule --add app="^Linear$" display=2       # portrait
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^Simulator$" manage=off
-yabai -m rule --add app="^3Password$" manage=off
 yabai -m rule --add app="^Rode$" manage=off
+yabai -m rule --add app="^3Password$" manage=off
+
+# Start borders automatically - FelixKratz/formulae/borders
+borders active_color=0xffff6b35 inactive_color=0xff494d64 width=5.0 &
