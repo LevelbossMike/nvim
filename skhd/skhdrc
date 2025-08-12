@@ -93,8 +93,3 @@ hyper + shift - r : yabai --restart-service; skhd --restart-service
 hyper - space : open -a "Ghostty"
 hyper - b : open -a "Dia"
 hyper - o : open -a "Obsidian"
-
-# Legacy app shortcuts (keep these if you prefer cmd)
-cmd - i : open -a "Ghostty"
-cmd - 0x29 : open -a "Dia"
-cmd - 0x27 : open -a "Obsidian"
