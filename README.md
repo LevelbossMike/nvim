@@ -23,8 +23,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Karabiner Elements
 
-- The `hyper`-key mimics command + option + ctrl + shift. This is nice because
-  no key-combination has been set with all modifier keys pressed together. This
+- To remap `caps_lock`-key to a special key-combo we use karabiner-elements.
+  This is nice because no key-combination has been set for rcmd+rctrl. This
   makes window management with Yabai easy to shortcut.
-- To get the `hyper`-key - you need to copy caps_lock_to_hyper_esc.json as
-  a custom rule in complex modifications of karabiner-elements.
+- To get the `rcmd+rctrl`-key - you need to copy caps_lock_remap.json as a custom rule in complex modifications of karabiner-elements.

@@ -1,0 +1,20 @@
+{
+    "description": "Caps Lock to (rcmd+rctrl)/Escape",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": { "optional": ["any"] }
+            },
+            "parameters": { "basic.to_if_alone_timeout_milliseconds": 200 },
+            "to": [
+                {
+                    "key_code": "right_command",
+                    "modifiers": ["right_control"]
+                }
+            ],
+            "to_if_alone": [{ "key_code": "escape" }],
+            "type": "basic"
+        }
+    ]
+}
