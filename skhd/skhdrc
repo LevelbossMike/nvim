@@ -4,10 +4,10 @@
 # fallback to switching display in same direction,
 # then focus most recent window on that display.
 # --------------------------------------------
-meh - h : yabai -m window --focus west  || yabai -m display --focus west
-meh - j : yabai -m window --focus south || yabai -m display --focus south
-meh - k : yabai -m window --focus north || yabai -m display --focus north
-meh - l : yabai -m window --focus east  || yabai -m display --focus east
+rcmd + rctrl - h : yabai -m window --focus west  || yabai -m display --focus west
+rcmd + rctrl - j : yabai -m window --focus south || yabai -m display --focus south
+rcmd + rctrl - k : yabai -m window --focus north || yabai -m display --focus north
+rcmd + rctrl - l : yabai -m window --focus east  || yabai -m display --focus east
 
 # --------------------------------------------
 # VIM-style window warping (move windows)
@@ -15,54 +15,56 @@ meh - l : yabai -m window --focus east  || yabai -m display --focus east
 # to adjacent display if there's no space in that direction,
 # then keep focus on moved window.
 # --------------------------------------------
-meh + cmd - h : yabai -m window --warp west  || (yabai -m window --display west;  yabai -m window --focus recent)
-meh + cmd - j : yabai -m window --warp south || (yabai -m window --display south; yabai -m window --focus recent)
-meh + cmd - k : yabai -m window --warp north || (yabai -m window --display north; yabai -m window --focus recent)
-meh + cmd - l : yabai -m window --warp east  || (yabai -m window --display east;  yabai -m window --focus recent)
+rcmd + rctrl + lcmd - h : yabai -m window --warp west  || (yabai -m window --display west;  yabai -m window --focus recent)
+rcmd + rctrl + lcmd - j : yabai -m window --warp south || (yabai -m window --display south; yabai -m window --focus recent)
+rcmd + rctrl + lcmd - k : yabai -m window --warp north || (yabai -m window --display north; yabai -m window --focus recent)
+rcmd + rctrl + lcmd - l : yabai -m window --warp east  || (yabai -m window --display east;  yabai -m window --focus recent)
 
 # Move windows to displays
-meh + cmd - q : yabai -m window --display 1; yabai -m window --focus recent
-meh + cmd - w : yabai -m window --display 3; yabai -m window --focus recent
-meh + cmd - e : yabai -m window --display 2; yabai -m window --focus recent
+rcmd + rctrl + lcmd - q : yabai -m window --display 1; yabai -m window --focus recent
+rcmd + rctrl + lcmd - w : yabai -m window --display 3; yabai -m window --focus recent
+rcmd + rctrl + lcmd - e : yabai -m window --display 2; yabai -m window --focus recent
 
 # --------------------------------------------
 # Window management utilities
 # --------------------------------------------
-meh - f : yabai -m window --toggle zoom-fullscreen
-meh - t : yabai -m window --toggle float
-meh - r : yabai -m space --rotate 90
+rcmd + rctrl - f : yabai -m window --toggle zoom-fullscreen
+rcmd + rctrl - t : yabai -m window --toggle float
+rcmd + rctrl - r : yabai -m space --rotate 90
 
 # --------------------------------------------
 # Layout manipulation
 # --------------------------------------------
-meh - b : yabai -m space --balance
-meh - y : yabai -m space --mirror y-axis
-meh - x : yabai -m space --mirror x-axis
+rcmd + rctrl - b : yabai -m space --balance
+rcmd + rctrl - y : yabai -m space --mirror y-axis
+rcmd + rctrl - x : yabai -m space --mirror x-axis
 
 # --------------------------------------------
 # Window resizing (use arrow-keys)
 # --------------------------------------------
-meh - left  : yabai -m window --resize left:-50:0 || yabai -m window --resize right:-50:0
-meh - down  : yabai -m window --resize bottom:0:50 || yabai -m window --resize top:0:50
-meh - up    : yabai -m window --resize top:0:-50 || yabai -m window --resize bottom:0:-50
-meh - right : yabai -m window --resize right:50:0 || yabai -m window --resize left:50:0
+rcmd + rctrl - left  : yabai -m window --resize left:-50:0 || yabai -m window --resize right:-50:0
+rcmd + rctrl - down  : yabai -m window --resize bottom:0:50 || yabai -m window --resize top:0:50
+rcmd + rctrl - up    : yabai -m window --resize top:0:-50 || yabai -m window --resize bottom:0:-50
+rcmd + rctrl - right : yabai -m window --resize right:50:0 || yabai -m window --resize left:50:0
 
 # --------------------------------------------
-# Move floating windows with cmd + arrow keys
+# Move floating windows with lcmd + arrow keys
 # --------------------------------------------
-meh + cmd - left  : yabai -m window --move rel:-50:0
-meh + cmd - down  : yabai -m window --move rel:0:50
-meh + cmd - up    : yabai -m window --move rel:0:-50
-meh + cmd - right : yabai -m window --move rel:50:0
+rcmd + rctrl + lcmd - left  : yabai -m window --move rel:-50:0
+rcmd + rctrl + lcmd - down  : yabai -m window --move rel:0:50
+rcmd + rctrl + lcmd - up    : yabai -m window --move rel:0:-50
+rcmd + rctrl + lcmd - right : yabai -m window --move rel:50:0
 
 # --------------------------------------------
 # System management
 # --------------------------------------------
-meh + cmd - r : yabai --restart-service; skhd --restart-service
+rcmd + rctrl + lcmd - r : yabai --restart-service; skhd --restart-service
 
 # --------------------------------------------
 # App launching/focusing
 # --------------------------------------------
-meh - o : open -a "Obsidian"
-meh - space : open -a "Ghostty"
-meh - 0x29  : open -a "Dia" # meh + ö
+rcmd + rctrl - o : open -a "Obsidian"
+rcmd + rctrl - space : open -a "Ghostty"
+rcmd + rctrl - 0x29  : open -a "Dia" # meh + ö
+
+rcmd + rctrl - h : osascript -e 'display notification "Caps Lock combo working!" with title "Success"'
