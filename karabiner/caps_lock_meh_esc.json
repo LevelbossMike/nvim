@@ -1,5 +1,5 @@
 {
-  "description": "Caps Lock to Hyper/Escape",
+  "description": "Caps Lock to Meh/Escape",
   "manipulators": [
     {
       "type": "basic",
@@ -14,8 +14,8 @@
       },
       "to": [
         {
-          "key_code": "left_command",
-          "modifiers": ["left_control", "left_shift", "left_option"]
+          "key_code": "left_shift",
+          "modifiers": ["left_control", "left_option"]
         }
       ],
       "to_if_alone": [
