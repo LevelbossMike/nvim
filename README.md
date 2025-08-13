@@ -1,4 +1,8 @@
-# 💤 LazyVim
+# Dotfiles
+
+MacOs + Nvim
+
+## 💤 LazyVim
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
@@ -6,9 +10,6 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ## Things included in this config
 
 - Helpful niceties via lazyvim - popup windows etc.
-- AI coding help
-  - GitHub Copilot
-  - ChatGPT.nvim - interact with chatGPT from vim
 - VSCode like language server support for javascript, typescript, ember etc.
 - Interaction with databases via vim-datbod
 - No file tree - use netrw instead
@@ -25,6 +26,5 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 - The `hyper`-key mimics command + option + ctrl + shift. This is nice because
   no key-combination has been set with all modifier keys pressed together. This
   makes window management with Yabai easy to shortcut.
-- To get the `hyper`-key - you need to install the "Change caps_lock key"
-  extension. It will send the `hyper`-key when caps_lock is pressed but treat it
-  as `esc` when pressed alone without another key
+- To get the `hyper`-key - you need to copy caps_lock_to_hyper_esc.json as
+  a custom rule in complex modifications of karabiner-elements.
