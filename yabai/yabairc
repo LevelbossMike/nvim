@@ -18,6 +18,12 @@ yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 yabai -m config mouse_drop_action swap
 
+# Focus follows mouse (cursor position determines focused window)
+yabai -m config focus_follows_mouse autofocus
+
+# Mouse follows focus (cursor jumps to focused window when you switch with keyboard)
+yabai -m config mouse_follows_focus on
+
 # App placement rules for multi-monitor setup
 yabai -m rule --add app="^Ghostty$" display=3      # main monitor
 yabai -m rule --add app="^Dia$" display=2          # portrait
