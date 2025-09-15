@@ -2,14 +2,6 @@ return {
   --------------------
   -- Coding section --
   --------------------
-  -- don't need snippets
-  {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
-    end,
-  },
-  { "rafamadriz/friendly-snippets", enabled = false },
 
   --------------------
   -- Editor section --

@@ -21,8 +21,8 @@ keymap.set("n", "ä", "<C-W>>")
 ------------
 -- Search --
 ------------
--- dismiss higlighted search items on <leader>+space
-keymap.set("n", "<leader><space>", ":noh<CR>")
+-- dismiss higlighted search items on <esc>
+keymap.set("n", "<esc>", "<cmd>nohlsearch<cr><esc>", { desc = "No Highlight and Escape" })
 
 -----------
 -- NetRW --
