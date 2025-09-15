@@ -69,3 +69,4 @@ rcmd + rctrl - 0x29  : open -a "Dia" # rcmd + rctrl - ö
 rcmd + rctrl - s : open -a "Slack" 
 rcmd + rctrl - m : open -a "Spotify" 
 rcmd + rctrl - n : open -a "Signal" 
+rcmd + rctrl - p : open -a "Todoist" 
