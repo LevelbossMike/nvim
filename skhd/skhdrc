@@ -65,7 +65,7 @@ rcmd + rctrl + lcmd - r : yabai --restart-service; skhd --restart-service
 # --------------------------------------------
 rcmd + rctrl - o : open -a "Obsidian"
 rcmd + rctrl - space : open -a "Ghostty"
-rcmd + rctrl - 0x29  : open -a "Dia" # rcmd + rctrl - ö
+rcmd + rctrl - 0x29  : open -a "Comet" # rcmd + rctrl - ö
 rcmd + rctrl - s : open -a "Slack" 
 rcmd + rctrl - m : open -a "Spotify" 
 rcmd + rctrl - n : open -a "Signal" 

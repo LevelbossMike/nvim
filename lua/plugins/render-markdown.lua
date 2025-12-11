@@ -1,18 +1,9 @@
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   opts = {
-    code = {
-      sign = false,
-      width = "block",
-      right_pad = 1,
-    },
-    heading = {
-      sign = false,
-      icons = {},
-    },
     checkbox = {
       enabled = true,
-      render_modes = false,
+      render_modes = true,
       right_pad = 1,
       checked = {
         icon = "✅", -- checkmark
@@ -43,8 +34,9 @@ return {
           rendered = "⏩", -- Fast forward button
           highlight = "Special", -- Purple-ish color
         },
-        -- Canceled
-        canceled = {
+        -- Canceled - todo exists by default, thus we need to override it
+        -- See default config of render-markdown.nvim
+        todo = {
           raw = "[-]",
           rendered = "❌", -- Cross mark
           highlight = "Comment", -- Gray color

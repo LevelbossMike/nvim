@@ -28,4 +28,4 @@ keymap.set("n", "<esc>", "<cmd>nohlsearch<cr><esc>", { desc = "No Highlight and 
 -- NetRW --
 -----------
 -- open file explorer with <leader><Tab>
-keymap.set("n", "<leader><Tab>", ":Explore<CR>", { noremap = true, silent = true })
+keymap.set("n", "<leader><Tab>", ":Explore<CR>", { noremap = true, silent = true, desc = "Open file explorer" })
